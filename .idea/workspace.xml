@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="def12c7f-40f9-4b8f-b5aa-86fc995d7246" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/AMZN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/MSFT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/core/MSFT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/core/lstm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/core/migrations/0003_auto_20200328_2245.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/core/migrations/0004_news.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/core/migrations/0005_news_timestamp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/core/migrations/0006_auto_20200329_0028.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/core/migrations/0007_company_pred_img.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/core/templates/core/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/media/AAPL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/media/AAPL_GYppIbe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/media/AMZN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/media/AMZN_Mf0eIvb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/media/MSFT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/media/mlFB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/newsandcommodities/migrations/0002_auto_20200328_2244.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/newsandcommodities/migrations/0003_auto_20200328_2245.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/autocomplete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/changelists.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/responsive_rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/vendor/select2/LICENSE-SELECT2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/vendor/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/css/widgets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/fonts/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/fonts/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/fonts/Roboto-Bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/fonts/Roboto-Light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/fonts/Roboto-Regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/calendar-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/gis/move_vertex_off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/gis/move_vertex_on.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-addlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-changelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-deletelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-no.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-unknown-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-unknown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-viewlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/icon-yes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/inline-delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/selector-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/sorting-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/tooltag-add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/img/tooltag-arrowright.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/SelectBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/SelectFilter2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/actions.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/autocomplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/cancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/change_form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/collapse.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/inlines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/inlines.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/jquery.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/popup_response.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/prepopulate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/prepopulate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/prepopulate_init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/timeparse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/urlify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/i18n/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/select2.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/select2/select2.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/xregexp/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/gijgo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/main.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/slicknav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/style.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/css/ticker-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/Flaticon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/Flaticon.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/flaticon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/about/about_lft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/about/about_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/about/pet_care.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/adapt_icon/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/adapt_icon/1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/adapt_icon/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/adapt_icon/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/banner/dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/banner/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/blog/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/blog/blog_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/blog/learn_about_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/blog/single_blog_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/blog/single_blog_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/blog/single_blog_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/blog/single_blog_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/blog/single_blog_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/blog/slide_thumb_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/comment/comment_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/comment/comment_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/comment/comment_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/a2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/disabled-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/disabled-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/f5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/g7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/g8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/primary-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/primary-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/success-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/elements/success-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/gallery/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/gallery/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/gallery/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/hero/h1_hero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/hero/header_card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/icon/header_icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/icon/header_icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/logo/form-iocn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/logo/form-iocn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/logo/logo (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/logo/logo2_footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/logo/logo_new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/ml/AMZN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/icon-fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/icon-ins.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/icon-tw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/icon-yo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/news_card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/recent1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/recent2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/recent3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/video_overly1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/weekly2News1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/weekly2News2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/weekly2News3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/weekly2News4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/weeklyNews1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/weeklyNews2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/weeklyNews3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/whatNews1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/whatNews2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/whatNews3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/news/whatNews4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/offers/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/offers/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/offers/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/our_blog/blog-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/about_heor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/instra1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/instra2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/instra3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/instra4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/instra5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/instra6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/post_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/post/preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/prising/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/completed_case_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/completed_case_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/completed_case_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/completed_case_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/completed_case_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/completed_case_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/service_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/service_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/service_icon_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/service_icon_bg_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/service/services_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/team/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/team/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/team/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/amazon.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/amazon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/apple.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/facebook.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/right1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/right2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/right3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/right4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/right5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/tesla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/trending_bottom1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/trending_bottom2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/trending_bottom3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/img/trending/trending_top.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/animated.headline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/gijgo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.ajaxchimp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.nice-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.paroller.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.scrollUp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.slicknav.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.ticker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/mail-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/one-page-nav-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/vendor/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/vendor/modernizr-3.5.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_about-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_blog_page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_bradcam.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_completed-cases.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_elements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_extend.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_headerMenu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_overlay.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_recent-articles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_services.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_services_section.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_team.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_testimonial.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_trending.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_wecky-new.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_wecky2-new.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_whats-new.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/_youtube.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/assets/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/css/bootstrap-tweaks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/css/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/css/font-awesome-4.0.3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/css/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/docs/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/docs/css/highlight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/docs/css/jquery.json-view.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/docs/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/docs/img/grid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/docs/js/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/docs/js/highlight.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/docs/js/jquery.json-view.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/img/grid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/js/ajax-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/js/coreapi-0.1.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/js/csrf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/js/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/root/rest_framework/js/prettify-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/autocomplete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/changelists.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/responsive_rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/vendor/select2/LICENSE-SELECT2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/vendor/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/css/widgets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/fonts/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/fonts/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/fonts/Roboto-Bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/fonts/Roboto-Light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/fonts/Roboto-Regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/calendar-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/gis/move_vertex_off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/gis/move_vertex_on.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-addlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-changelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-deletelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-no.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-unknown-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-unknown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-viewlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/icon-yes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/inline-delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/selector-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/sorting-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/tooltag-add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/img/tooltag-arrowright.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/SelectBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/SelectFilter2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/actions.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/autocomplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/cancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/change_form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/collapse.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/inlines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/inlines.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/jquery.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/popup_response.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/prepopulate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/prepopulate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/prepopulate_init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/timeparse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/urlify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/i18n/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/select2.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/select2/select2.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/xregexp/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/gijgo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/main.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/slicknav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/style.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/css/ticker-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/Flaticon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/Flaticon.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/flaticon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/about/about_lft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/about/about_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/about/pet_care.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/adapt_icon/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/adapt_icon/1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/adapt_icon/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/adapt_icon/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/banner/dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/banner/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/blog/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/blog/blog_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/blog/learn_about_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/blog/single_blog_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/blog/single_blog_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/blog/single_blog_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/blog/single_blog_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/blog/single_blog_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/blog/slide_thumb_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/comment/comment_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/comment/comment_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/comment/comment_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/a2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/disabled-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/disabled-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/f5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/g7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/g8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/primary-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/primary-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/success-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/elements/success-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/gallery/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/gallery/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/gallery/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/hero/h1_hero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/hero/header_card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/icon/header_icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/icon/header_icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/logo/form-iocn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/logo/form-iocn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/logo/logo (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/logo/logo2_footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/logo/logo_new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/icon-fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/icon-ins.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/icon-tw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/icon-yo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/news_card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/recent1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/recent2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/recent3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/video_overly1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/weekly2News1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/weekly2News2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/weekly2News3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/weekly2News4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/weeklyNews1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/weeklyNews2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/weeklyNews3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/whatNews1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/whatNews2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/whatNews3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/news/whatNews4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/offers/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/offers/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/offers/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/our_blog/blog-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/about_heor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/instra1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/instra2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/instra3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/instra4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/instra5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/instra6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/post_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/post/preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/prising/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/completed_case_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/completed_case_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/completed_case_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/completed_case_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/completed_case_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/completed_case_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/service_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/service_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/service_icon_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/service_icon_bg_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/service/services_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/team/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/team/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/team/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/amazon.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/amazon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/apple.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/facebook.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/right1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/right2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/right3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/right4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/right5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/tesla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/trending_bottom1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/trending_bottom2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/trending_bottom3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/img/trending/trending_top.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/animated.headline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/gijgo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.ajaxchimp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.nice-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.paroller.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.scrollUp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.slicknav.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.ticker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/mail-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/one-page-nav-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/vendor/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/vendor/modernizr-3.5.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_about-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_blog_page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_bradcam.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_completed-cases.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_elements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_extend.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_headerMenu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_overlay.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_recent-articles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_services.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_services_section.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_team.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_testimonial.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_trending.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_wecky-new.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_wecky2-new.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_whats-new.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/_youtube.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/assets/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/ml/AMZN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/mlFB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/css/bootstrap-tweaks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/css/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/css/font-awesome-4.0.3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/css/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/docs/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/docs/css/highlight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/docs/css/jquery.json-view.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/docs/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/docs/img/grid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/docs/js/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/docs/js/highlight.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/docs/js/jquery.json-view.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/img/grid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/js/ajax-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/js/coreapi-0.1.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/js/csrf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/js/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/static/rest_framework/js/prettify-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/templates/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/templates/com_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/templates/commodities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/templates/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/templates/elements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/templates/latest_news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stockmarket/templates/ml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/charts/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/charts/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/charts/templates/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/charts/templates/charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/charts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/charts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/core/Names.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/core/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/core/ml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/core/templates/core/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/core/templates/core/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/newsandcommodities/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/newsandcommodities/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/stockmarket/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/stockmarket/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmarket/stockmarket/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmarket/stockmarket/settings.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Z3cnkWA5AEuFQ3blUw4pDbkTLv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stockmarket/static" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Parth\Desktop\DjangoProjects\StockMarket\stockmarket\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Parth\Desktop\DjangoProjects\StockMarket\stockmarket\media" />
+      <recent name="C:\Users\Parth\Desktop\DjangoProjects\StockMarket\stockmarket\root\assets\img\ml" />
+      <recent name="C:\Users\Parth\Desktop\DjangoProjects\StockMarket\stockmarket\static" />
+      <recent name="C:\Users\Parth\Desktop\StockMarket\stockmarket" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ml" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="StockMarket" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stockmarket/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stockmarket/core/ml.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="def12c7f-40f9-4b8f-b5aa-86fc995d7246" name="Default Changelist" comment="" />
+      <created>1584071387030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584071387030</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="GET" action="{% url 'core:list' %}">
+    <input type = "text" name="q" placeholder="Search" style="color:black;">
+</form>
+
+    {%  for company in companies %}
+        <h1>
+            <a href="{% url 'core:details' company.pk %}">{{ company.name }}</a>
+        </h1>
+    {% endfor %}
+{% endblock %}

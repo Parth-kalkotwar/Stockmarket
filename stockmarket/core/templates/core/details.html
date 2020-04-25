@@ -1,0 +1,16 @@
+
+
+{% extends 'base.html' %}
+{% block content %}
+        <p>
+        <span style="color: Red; font-size: 2em;"><b>{{ company.name }}</b></span><small>{{ company.symbol }}</small><br>
+        PRICE: {{ company.price }}<br>
+        Change: {{ company.change }} = {{ company.change_perc }} %<br>
+        HIGH: {{ company.high }}<br>
+        LOW: {{ company.low }}<br>
+        LATEST VOLUME : {{ company.latestVolume }}<br>
+        EXCHANGE : {{ company.exchange }}<br>
+    </p>
+<a href="{% url 'charts:index' company.pk %}">Show Graph</a>
+
+{% endblock %}

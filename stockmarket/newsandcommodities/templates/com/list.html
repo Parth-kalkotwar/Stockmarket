@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="GET" action="{% url 'nandc:list' %}">
+    <input type = "text" name="q" placeholder="Search" style="color:black;">
+</form>
+    {% for commodity in commodities %}
+    <p>
+        Name : <a href="{% url 'nandc:details' commodity.pk %}">{{ commodity.name }}</a><br>
+        Price: $ {{ commodity.price }} / oz<br>
+    </p>
+    {% endfor %}
+</body>
+</html>

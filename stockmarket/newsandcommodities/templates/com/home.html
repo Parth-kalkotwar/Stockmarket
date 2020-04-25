@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Commodities</h1>
+{% for commodity in top_changes %}
+    <p>
+        Name : <a href="{% url 'nandc:details' commodity.pk %}">{{ commodity.name }}</a><br>
+        Price: $ {{ commodity.price }}<br>
+        Chamge: {{ commodity.change_perc }}
+    </p>
+{% endfor %}
+
+    <h1>TopCommoditeies</h1>
+    {% for key,value in top_commodities.items %}
+    <p>
+        Name :{{ key }}</a><br>
+        Price: $
+        {{ value.price }}
+    </p>
+{% endfor %}
+    <h2><a href="{% url 'nandc:list' %}">View ALL</a> </h2>
+</body>
+</html>
